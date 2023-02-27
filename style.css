@@ -1,0 +1,388 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+body {
+    font: 16px Poppins;
+    color: #414042;
+    background: url("../img/pozadi7.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    min-height: 100vh;
+    min-width: 960px;
+}
+
+body > header {
+    height: 100px;
+    width: 100%;
+    background: #156d93;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(img/h-icon5.png) no-repeat;
+    background-size: 40px 40px;
+}
+
+#logo > * {
+    margin: 0 0 0 50px;
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: white;
+}
+
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover, .aktivni a {
+    border-bottom: 2px solid #c1ecee;
+}
+
+.kontakt-tlacitko {
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #156d93;
+    font-weight: bold;
+}
+
+.kontakt-tlacitko:hover,
+.projekty-tlacitko:hover {
+    background: #d7e0ee;
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+article {
+    padding: 80px 50px;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1278px;
+}
+
+.lighten-background {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    padding: 50px 50px 50px 70px;
+    box-shadow: inset 0px 0px 22px 22px #c1ecee;
+    margin-bottom: 25px;
+}
+
+.domu-wrap {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.domu-text {
+    width: 50%;
+}
+
+.domu-img img {
+
+    display: block;
+    width: 300px;
+    border: 10px solid #156d93;
+    border-radius: 50%;
+    filter: grayscale(1);
+    margin-top: 110px
+}
+
+.icon-wrap {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.icon-wrap img:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.kontakt-icon {
+    width: 45px;
+    margin: 10px 18px 10px 0;
+    display: inline-block;
+}
+
+article header {
+    height: 100px;
+}
+
+article h1,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: #156d93;
+    width: max-content;
+    padding: 0 0;
+}
+
+article h2 {
+    color: #156d93;
+    width: max-content;
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+article h1 {
+    margin: 0 0 41px 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid #54d0d6;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article section p {
+    line-height: 1.8em;
+    margin-bottom: 1.5em;
+    margin-top: 0;
+}
+
+article section a {
+    color: #156d93;
+}
+
+.projekty-tlacitko {
+    background: #70B73A;
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+img {
+    width: 300px;
+}
+
+footer {
+    color: white;
+    background: #156C7F;
+    padding: 51px 0 35px 0;
+    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+    /* předěláno na flex */
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vlevo {
+    float: left;
+    width: 30px;
+    padding-right: 20px;
+}
+
+
+/* Sekce O mně */
+.cv-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.CV1 {
+    margin-top: 25px;
+    /* height: 1500px;
+    width:1060px; */
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.CV2 {
+    /* height: 1500px;
+    width:1060px; */
+    margin: 10px 0 10px 0;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+/* Sekce Dovednosti */
+.dovednost-item {
+    display: flex;
+    margin: 40px 0;
+}
+
+.dovednosti img {
+    width: 109px;
+    height: 109px;
+    display: block;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+.dovednosti p {
+    display: block;
+    margin: 0;
+}
+
+.studium-item {
+    display: flex;
+    margin: 40px 0 0 0;
+}
+
+.studium img {
+    width: 109px;
+    height: 109px;
+    display: block;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+/* Třída s vlastností pro ztučnění písma */
+.tucne {
+    font-weight: bold;
+    color: #156d93;
+}
+
+/* Tabulka s ostatními kurzy v sekci Dovednosti */
+table {
+    margin-top: 30px;
+    width: 65%;
+    box-shadow: 3px 3px 6px #999999;
+}
+
+th {
+    border: 3px solid #646f78;
+    padding: 5px 0; 
+    font: 18px Poppins;
+    font-weight: bold;
+    color: #fff;
+    background-color: #137c9d;
+}
+
+td {
+    border-bottom: 1px solid #646f78;
+    border-right: 1px solid #646f78;
+    border-left: 1px solid #646f78;
+    padding: 2px 50px;
+    background: #fff;
+}
+
+.podekovani {
+    margin-top: 40px;
+}
+
+
+/* Sekce Projekty */
+#projekty {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#projekty img {
+    border: 1px solid gray;
+    box-shadow: 3px 3px 6px #999999;
+    margin-top: 15px;
+}
+
+.projekty-nahled img:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+.popisprojektu-item {
+    display: flex;
+}
+
+.popisprojektu img {
+    width: 109px;
+    height: 109px;
+    display: block;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+
+/* Sekce Certifikáty */
+#certifikaty {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#certifikaty img {
+    border: 1px solid gray;
+    box-shadow: 3px 3px 6px #999999;
+    margin: 15px 15px 15px 0;
+}
+
+#certifikaty img:hover {
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+
+
+/* -------PRAVIDLA PRO RESPONZIVITU WEBU - pro mobilní zařízení/tablety-------- */
+
+@media (max-width: 1117px) {
+
+    /* Sekce O mně */
+    .TEST {
+        margin-top: 25px;
+        height: 1315px;
+        width: 930px;
+    }
+    
+    .TEST {
+        height: 1315px;
+        width: 930px;
+    } 
+}
