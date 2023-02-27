@@ -12,7 +12,8 @@
 body {
     font: 16px Poppins;
     color: #414042;
-    background: url("../img/pozadi7.jpg") no-repeat center center fixed;
+    /* background: url("../img/pozadi7.jpg") no-repeat center center fixed; */
+    background: url("img/pozadi7.jpg") no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
