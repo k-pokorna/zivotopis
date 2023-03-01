@@ -11,6 +11,7 @@
   <title>Portfolio – Karolína Pokorná</title>
   <link rel="shortcut icon" href="img/h-icon5.png" />
   <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
   <article>
     <div id="container">
       <section class="domu-wrap">
-        <div class="domu-text lighten-background">
+        <div class="domu-text lighten-background wow animate__animated animate__fadeInLeft" data-wow-delay=".1s" animate__slow=".5s">
           <h1>Úvod</h1>
 
           <p>Vítám vás na své osobní prezentaci.</p>
@@ -76,16 +77,19 @@
 
           <p>Těším se na spolupráci také na:</p>
           <div class="icon-wrap">
-            <a href="https://www.linkedin.com/in/karolinapokorna"><img src="img/linkedin.png" class="kontakt-icon"
+            <a href="https://www.linkedin.com/in/karolinapokorna">
+              <img src="img/linkedin.png" class="kontakt-icon wow animate__animated animate__fadeInUp" data-wow-delay=".2s" animate__slow=".5s"
                 alt="Profil na LinkedInu"></a>
-            <a href="https://github.com/k-pokorna"><img src="img/github.png" class="kontakt-icon"
+            <a href="https://github.com/k-pokorna">
+              <img src="img/github.png" class="kontakt-icon wow animate__animated animate__fadeInUp" data-wow-delay=".3s" animate__slow=".5s"
                 alt="Profil na GitHubu"></a>
-            <a href="https://www.itnetwork.cz/portfolio/101860"><img src="img/itnetwork.png" class="kontakt-icon"
+            <a href="https://www.itnetwork.cz/portfolio/101860">
+              <img src="img/itnetwork.png" class="kontakt-icon wow animate__animated animate__fadeInUp" data-wow-delay=".4s" animate__slow=".5s"
                 alt="Profil na ITnetworku"></a>
           </div>
 
         </div>
-        <div class="domu-img">
+        <div class="domu-img wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
           <img src="img/foto2.png" alt="Bc. Karolína Pokorná" />
         </div>
       </section>
@@ -95,6 +99,14 @@
   <footer class="footer-hide">
     <p>Vytvořila &copy; Bc. Karolína Pokorná 2023</p>
   </footer>
+
+  <!-- Napojení jQuery (napojujeme nejprve jQuery a potom externí soubor s JavaScriptem main.js) -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
+
+
 
 </html>
