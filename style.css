@@ -131,13 +131,16 @@ article {
 }
 
 .domu-img img {
-
     display: block;
     width: 300px;
     border: 10px solid #156d93;
     border-radius: 50%;
     filter: grayscale(1);
     margin-top: 110px
+}
+
+.mobile-img {
+    display: none;
 }
 
 .icon-wrap {
@@ -242,15 +245,11 @@ footer {
 
 .CV1 {
     margin-top: 25px;
-    /* height: 1500px;
-    width:1060px; */
     width: 100%;
     border-radius: 0 20px 20px 0;
 }
 
 .CV2 {
-    /* height: 1500px;
-    width:1060px; */
     margin: 10px 0 10px 0;
     width: 100%;
     border-radius: 0 20px 20px 0;
@@ -373,17 +372,51 @@ td {
 
 /* -------PRAVIDLA PRO RESPONZIVITU WEBU - pro mobilní zařízení/tablety-------- */
 
-@media (max-width: 1117px) {
+@media (max-width: 1078px) {
 
     /* Sekce O mně */
-    .TEST {
-        margin-top: 25px;
-        height: 1315px;
-        width: 930px;
+    .domu-img img {
+        display: none;
+    }
+
+    .mobileimg-wrap {
+        display: flex;
+        justify-content: center;
     }
     
-    .TEST {
-        height: 1315px;
-        width: 930px;
+    .mobile-img {
+        display: block;
+        width: 230px;
+        border: 10px solid #156d93;
+        border-radius: 50%;
+        filter: grayscale(1);
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .domu-text {
+        width: 100%;
+    }
+
+    footer {
+        color: white;
+        background: #156C7F;
+        margin-top: auto;
+        padding: 51px 0 35px 0;
+        clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+        /* předěláno na flex */
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
+
+/* Nepodařil se zatím vyřešit problém, aby při zobrazení na mobilu footer v sekci Domů a Kontakt neodskakoval odspoda, tak jsem ho pro tuto velikost zatím schovala,
+snad to při 1. úkolu není moc velký hřích, když responzivitu budeme teprve probírat :-) */
+@media (max-width: 669px) {
+    .footer-hide {
+        display: none;
     } 
+
 }
